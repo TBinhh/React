@@ -11,8 +11,10 @@ import LogInForm from './LogInForm';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(<ProfileCard />);
 // root.render(<UserAgent />);
 // root.render(<StudentList />);
-root.render(<LogInForm />);
+// root.render(<LogInForm />);
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
