@@ -1,5 +1,5 @@
 // bang thoong tin sinh vien
-export default function StudentList() {
+export default function () {
     const students = [
         {
             company: 'Alfreds Futterkiste',
