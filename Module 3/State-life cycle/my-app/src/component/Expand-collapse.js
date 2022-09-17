@@ -1,4 +1,5 @@
 import React from "react";
+// import {Component} from "react";
 // import Button from ''
 class isExpend extends React.Component {
     constructor(props) {
@@ -19,9 +20,9 @@ class isExpend extends React.Component {
             )
         }
         return (
-            <div className="container">
+            <div className="container" style={{ backgroundColor: 'green', }}>
                 <div>
-                    <h1 style={{ backgroundColor: 'green', }}>Hiển thị </h1>
+                    <h1 >Hiển thị </h1>
                 </div>
                 <button label={this.state.isExpend ? 'Đóng giới thiệu' : 'Giới thiệu'} onClick={this.changeDisplay} />
                 <div>{intro}</div>
