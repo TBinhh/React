@@ -1,7 +1,7 @@
 import React from "react";
-// import {Component} from "react";
+import {Component} from "react";
 // import Button from ''
-class isExpend extends React.Component {
+class isExpend extends Component {
     constructor(props) {
         super(props);
         this.state = { isExpend: false }

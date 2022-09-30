@@ -6,12 +6,13 @@ import reportWebVitals from './reportWebVitals';
 import UserLog from './component/userLoginLogout';
 import isExpend from './component/Expand-collapse';
 import Calculator from './component/Calculator';
-
+import isLoggedIn from './component/LogInForm';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(<UserLog />);
 // root.render(<isExpand />);
-root.render(<isExpend />);
+// root.render(<Calculator />);
+root.render(<isLoggedIn />);
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals

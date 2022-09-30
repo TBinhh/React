@@ -1,7 +1,11 @@
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import LogIn from "./LogIn";
 
-import
+
 export const Home = () => {
-   
+   return (
+    <div className="container">
+        
+    </div>
+   )
 }

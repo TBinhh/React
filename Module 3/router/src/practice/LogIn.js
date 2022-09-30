@@ -1,21 +1,38 @@
-export const LogIn = () => {
+import { Formik } from "formik";
+import { useState} from "react";
+import { Form } from "react-router-dom";
+import * as Yup from "yup";
+
+const loginSchema = Yup.object().shape({
+    username: Yup.string().email().required(),
+    password: Yup.string().min(6).max(10).required(),
+})
+export const Login = () => {
+    const [form, setForm] = useState({username:'',password:''});
+    
     return (
-        
+        <div className="container">
+            <Formik
+            initialValues={form}
+            enableReinitialize={true}
+            validationSchema={loginSchema}
+            onSubmit={value => {
+
+            }}
+            >
+                {
+                    ({ Errors
+
+                    })
+                }
+            <Form>
+                <Field name="username" type="text"></Field>
+                <ErrorMessage component="div" className="text-danger"></ErrorMessage>
+            </Form>
+            </Formik>
+                       
+        </div>
     )
-    <h1>Log In Form</h1>
-    <form>
-
-        <div class="mb-3">
-            <label class="form-label">Email address</label>
-            <input type="email" name='email' class="form-control" value={form.email || ''} onChange={handleChange}></input>
-
-        </div>
-        <div class="mb-3">
-            <label class="form-label">Password</label>
-            <input type="password" class="form-control" name='password' value={form.password || ''} onChange={handleChange}></input>
-        </div>
-        <button type="submit" class="btn btn-primary" onClick={handleSubmit}>Submit</button>
-    </form>
-</div>
+    
 }
-export default LogIn;
+export default Login;
