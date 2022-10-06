@@ -1,5 +1,5 @@
-import {userRouter} from 'react-dom';
+import {userRouter} from 'react';
 export default function HomeIndex() {
-    const router = useRouter();
+    const router = userRouter();
 
 }
